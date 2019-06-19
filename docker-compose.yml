@@ -1,8 +1,8 @@
 version: "2"
 
 volumes:
-  - phabricator-db-etc:
-  - phabricator-db-lib:
+  phabricator-db-etc:
+  phabricator-db-lib:
 
 services:
   phabricator:
