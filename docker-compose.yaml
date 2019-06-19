@@ -1,0 +1,20 @@
+version: "2"
+
+volumes:
+  - phabricator-db-etc:
+  - phabricator-db-lib:
+
+services:
+  phabricator:
+    container_name: "phabricator"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "$PORT_HTTPS:443"
+      - "$PORT_HTTP:80"
+    restart: "always"
+    volumes:
+      - "phabricator-db-etc:/etc/mysql"
+      - "phabricator-db-lib:/var/lib/mysql"
+
