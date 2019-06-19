@@ -7,8 +7,10 @@ Configuration
 ---
 
 MYSQL_PASS : MySQL root password  
-HOST_NAME : DNS server name  
 
+HOST_NAME : DNS server name  
+PORT_HTTP : Port for webserver  
+PORT_HTTPS : Port HTTP over SSL/TLS 
 ---
 
 based on http://www.tutum.co
