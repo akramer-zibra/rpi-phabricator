@@ -2,12 +2,9 @@
     ServerAdmin webmaster@localhost
 
     DocumentRoot /var/www/html
-    <Directory />
-            Options FollowSymLinks
-            AllowOverride None
-    </Directory>
     <Directory /var/www/html>
       Require all granted
+      LimitRequestBody 33554432‬    # 32MB
     </Directory>
 
     ErrorLog ${APACHE_LOG_DIR}/error.log
