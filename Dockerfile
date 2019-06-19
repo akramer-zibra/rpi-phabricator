@@ -47,5 +47,5 @@ ENV PHP_POST_MAX_SIZE 32M
 # Add volumes for MySQL 
 VOLUME  ["/etc/mysql", "/var/lib/mysql" ]
 
-EXPOSE 80 3306
+EXPOSE 80 443
 CMD ["/run.sh"]
