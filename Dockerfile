@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:latest
+FROM balenalib/rpi-raspbian:latest
 MAINTAINER Joaquín de la Zerda <joaquindelazerda@gmail.com>, Fernando Mayo <fernando@tutum.co>, Feng Honglin <hfeng@tutum.co>
 
 # Install packages
